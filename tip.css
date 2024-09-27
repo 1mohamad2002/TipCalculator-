@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to bottom right, #000000, #434343);
+    color: #ffffff; /* Changed to white for better contrast */
+    font-family: Arial, sans-serif; /* Added font for better readability */
+}
+
+#container {
+    width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Slightly increased border-radius */
+    background-color: rgba(20, 20, 20, 0.9); /* Semi-transparent background */
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #e74c3c; /* Softer red */
+    color: #e74c3c; /* Softer red for the title */
+    font-size: 24px; /* Increased font size for emphasis */
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #f39c12; /* Added color for labels */
+}
+
+form input,
+form select {
+    width: calc(100% - 16px); /* Full width minus padding */
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #e74c3c; /* Border color matching the theme */
+    border-radius: 5px; /* Consistent border radius */
+    background-color: #333; /* Dark background for inputs */
+    color: #ffffff; /* White text in inputs */
+}
+
+button {
+    background: #e74c3c; /* Softer red for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer; /* Cursor change to pointer */
+    transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background: #c0392b; /* Darker shade on hover */
+}
+
+button:active {
+    position: relative;
+    top: 1px; /* Slight press effect */
+}
+
+#TotalTip {
+    font-size: 50px;
+    margin-top: 40px;
+    color: #e74c3c; /* Softer red for total tip */
+}
+
+#TotalTip:before {
+    content: "Tip Amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#TotalTip sup {
+    font-size: 24px;
+    top: -18px;
+}
+
+#TotalTip small {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
